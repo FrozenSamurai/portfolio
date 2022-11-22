@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import HangingSocials from "./components/HangingSocials";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div
+        className="fixed ml-5 z-50"
+        style={{
+          display: window.innerWidth <= 450 ? "none" : "block",
+        }}
+      >
+        <HangingSocials />
+      </div>
+      <div className="fixed w-full flex justify-center z-50 ">
+        <Navbar />
+      </div>
+      <Home />
+      <Projects />
+    </>
   );
 }
 

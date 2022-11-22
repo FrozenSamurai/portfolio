@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-item:hover {
+  color: #ff9def;
+  cursor: pointer;
+  border-top: #ff9def solid 2px;
+  border-bottom: #ff9def solid 2px;
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+}
+
+#waifu-tips {
+  display: none !important;
+}
+
+#waifu-tool span:nth-child(1) {
+  display: none;
+}
+
+#waifu-tool span:nth-child(2) {
+  display: none;
+}
+
+#waifu-tool span:nth-child(3) {
+  display: none;
+}
+
+#waifu-tool span:nth-child(4) {
+  display: none;
+}
+
+#waifu-tool span:nth-child(5) {
+  display: none;
+}
+
+#waifu {
+  z-index: 998;
+}
