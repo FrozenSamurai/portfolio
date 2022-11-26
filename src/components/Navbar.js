@@ -12,7 +12,7 @@ const Navbar = () => {
           Raj Jadhav
         </h1>
       </a>
-      <div className="flex flex-row justify-center items-center space-x-10 pr-10">
+      <div className="md:flex flex-row justify-center items-center space-x-10 pr-10 hidden">
         <a
           href="google.com"
           className="lowercase font-firaCode font-extrabold text-gray nav-item"

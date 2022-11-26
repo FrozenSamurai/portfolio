@@ -72,7 +72,7 @@
 }
 
 .apply-border {
-  animation: border-ani 1s linear 2s forwards;
+  animation: border-ani 0.7s linear 2s forwards;
   animation-delay: 3s;
 }
 

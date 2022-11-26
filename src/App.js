@@ -8,14 +8,14 @@ function App() {
   return (
     <>
       <div
-        className="fixed ml-5 z-50"
-        style={{
-          display: window.innerWidth <= 450 ? "none" : "block",
-        }}
+        className="fixed ml-10 z-50 hidden md:block"
+        // style={{
+        //   display: window.innerWidth <= 450 ? "none" : "block",
+        // }}
       >
         <HangingSocials />
       </div>
-      <div className="fixed w-full flex justify-center z-50 ">
+      <div className="fixed w-screen flex justify-center z-50 ">
         <Navbar />
       </div>
       <Home />

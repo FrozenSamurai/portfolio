@@ -1,6 +1,7 @@
 import React from "react";
 import Matrix from "../elements/Matrix";
 import "../cssAssets/Home.css";
+import quotes from "./quotes.json";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -13,14 +14,20 @@ const Home = () => {
 
   const quotesBag = async () => {
     if (quote.message === "") {
-      const response = await fetch("https://api.quotable.io/random");
-      const data = await response.json();
-      setQuote({ auth: data.author, message: data.content });
+      //   const response = await fetch("https://api.quotable.io/random");
+      //   const data = await response.json();
+      //   setQuote({ auth: data.author, message: data.content });
+      var num = Math.floor(Math.random() * 2041);
+      console.log(num);
+      setQuote({
+        message: quotes[num].content,
+        auth: quotes[num].author,
+      });
     }
   };
 
   return (
-    <div className="bg-outer h-full flex  justify-center items-center relative">
+    <div className="bg-outer h-full w-screen flex  justify-center items-center relative overflow-x-hidden">
       <div className="bg-inner h-full w-4/5 flex flex-col justify-center items-center relative md:space-y-5">
         <div className="flex md:flex-row md:mt-20 flex-col-reverse justify-center items-center  w-full h-fit">
           <div
@@ -58,17 +65,20 @@ const Home = () => {
               className="w-[95%] h-full z-10 pl-2"
             />
             <div
-              className="absolute z-20 bottom-[20%] right-10 animate-bounce "
+              className="absolute z-20 bottom-[20%] right-10 animate-bounce hidden md:block"
               style={{
                 animationDuration: "3s",
               }}
             >
-              {" "}
-              {window.innerWidth > 450 ? (
-                <Matrix vertical={6} horizontal={6} />
-              ) : (
-                <Matrix vertical={5} horizontal={5} />
-              )}
+              <Matrix vertical={6} horizontal={6} />
+            </div>
+            <div
+              className="absolute z-20 bottom-[20%] right-10 animate-bounce block md:hidden "
+              style={{
+                animationDuration: "3s",
+              }}
+            >
+              <Matrix vertical={5} horizontal={5} />
             </div>
             <div className="border-2 w-5/6 border-gray flex flex-row items-center px-2 py-1">
               <div className="w-fit flex flex-row items-center">
@@ -113,9 +123,23 @@ const Home = () => {
             />
           </div>
           <div
-            className=" px-3 py-3 border-b-2 border-x-2 border-[#abb2bf] w-fit"
+            className=" px-3 py-3 border-b-2 border-x-2 border-[#abb2bf] w-fit block md:hidden"
             data-aos="fade-up"
-            data-aos-delay={window.innerWidth > 450 ? "4000" : "300"}
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <h1 className="text-white font-firaCode md:text-xl text-sm">
+              <span className="text-white font-firaCode md:text-xl text-sm pr-2">
+                -
+              </span>
+              {quote.auth}
+            </h1>
+          </div>
+          <div
+            className=" px-3 py-3 border-b-2 border-x-2 border-[#abb2bf] w-fit hidden md:block"
+            data-aos="fade-up"
+            data-aos-delay="4000"
+            data-aos-offset="0"
           >
             <h1 className="text-white font-firaCode md:text-xl text-sm">
               <span className="text-white font-firaCode md:text-xl text-sm pr-2">
