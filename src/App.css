@@ -73,3 +73,85 @@
 #waifu {
   z-index: 998;
 }
+
+.animatey {
+  animation: animateyaxis 3s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateyaxis {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animatey2 {
+  animation: animateyaxis2 3s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateyaxis2 {
+  0% {
+    transform: translateY(7%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(7%);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+.animate-pulse {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animatey4 {
+  animation: animateyaxis 4s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.animatey3 {
+  animation: animateyaxis2 4s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.animatey5 {
+  animation: animateyaxis2 5s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}

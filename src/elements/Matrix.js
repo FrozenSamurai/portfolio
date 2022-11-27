@@ -1,13 +1,13 @@
 import React from "react";
 
-const Matrix = ({ vertical, horizontal }) => {
+const Matrix = ({ vertical, horizontal, space = 4 }) => {
   return (
-    <div className="flex flex-row space-x-4">
-      {Array.from(Array(horizontal).keys()).map((key, ind) => {
+    <div className={`flex flex-row space-x-${space}`}>
+      {Array.from(Array(horizontal).keys()).map((ind) => {
         return (
-          <div className="flex flex-col space-y-4">
-            {Array.from(Array(vertical).keys()).map((key, ind) => {
-              console.log(ind);
+          <div className={`flex flex-col space-y-${space}`}>
+            {Array.from(Array(vertical).keys()).map((ind) => {
+              // console.log(ind);
               return <div className="w-1 h-1 rounded-full bg-gray"></div>;
             })}
           </div>

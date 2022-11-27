@@ -27,7 +27,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-outer h-full w-screen flex  justify-center items-center relative overflow-x-hidden">
+    <div className="bg-outer h-full w-screen flex  justify-center items-center relative overflow-hidden">
       <div className="bg-inner h-full w-4/5 flex flex-col justify-center items-center relative md:space-y-5">
         <div className="flex md:flex-row md:mt-20 flex-col-reverse justify-center items-center  w-full h-fit">
           <div
@@ -70,15 +70,15 @@ const Home = () => {
                 animationDuration: "3s",
               }}
             >
-              <Matrix vertical={6} horizontal={6} />
+              <Matrix vertical={6} horizontal={6} space={4} />
             </div>
             <div
-              className="absolute z-20 bottom-[20%] right-10 animate-bounce block md:hidden "
+              className="absolute z-20 bottom-[20%] right-10 animate-bounce block md:hidden space-y-4"
               style={{
                 animationDuration: "3s",
               }}
             >
-              <Matrix vertical={5} horizontal={5} />
+              <Matrix vertical={5} horizontal={5} space={4} />
             </div>
             <div className="border-2 w-5/6 border-gray flex flex-row items-center px-2 py-1">
               <div className="w-fit flex flex-row items-center">
@@ -152,10 +152,10 @@ const Home = () => {
       </div>
       <div className="absolute border-y-[1px] border-l-[1px] md:bottom-[15%] top-[32rem] right-0 border-gray h-20 md:w-20 w-8  "></div>
       <div className="absolute md:bottom-[25%] md:right-0 left-0 top-[25rem] border-gray h-20 w-fit md:hidden">
-        <Matrix vertical={5} horizontal={2} />
+        <Matrix vertical={5} horizontal={2} space={4} />
       </div>
       {/* <div className="absolute bottom-[40%] border-y-[1px] border-r-[1px] left-0 border-gray h-20 w-10 hidden md:hidden">
-         <Matrix vertical={5} horizontal={3} /> 
+         <Matrix vertical={5} horizontal={3} space={4}/> 
       </div> */}
     </div>
   );
