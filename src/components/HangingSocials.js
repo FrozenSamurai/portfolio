@@ -10,19 +10,35 @@ const HangingSocials = () => {
       {/* <span className="h-36 border-2 border-gray  bg-gray"></span> */}
       <span className="h-60 border-[1px] border-gray  bg-gray"></span>
       <div className="flex justify-center items-center flex-col space-y-3 ">
-        <a href="https://www.instagram.com/dmce_gits/">
+        <a
+          href="https://www.instagram.com/frozen_samurai/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <GrInstagram className="text-3xl text-white  mx-2 transition-all duration-100 ease-linear hover:animate-none  animate-wiggle" />
         </a>
-        <a href="https://mobile.twitter.com/dmce_gits">
+        <a
+          href="https://mobile.twitter.com/_raj_jadhav"
+          rel="noreferrer"
+          target="_blank"
+        >
           <GrTwitter className="text-3xl text-white  mx-2 transition-all duration-100 ease-linear hover:animate-none  animate-wiggle" />
         </a>
-        <a href="mailto:gits@dmce.ac.in">
+        <a href="mailto:rajjdhv2001@gmail.com" rel="noreferrer" target="_blank">
           <IoMailOutline className="text-3xl text-white  mx-2 transition-all duration-100 ease-linear hover:animate-none  animate-wiggle" />
         </a>
-        <a href="https://www.linkedin.com/company/dmce-gits/">
+        <a
+          href="https://www.linkedin.com/in/frozensamurai"
+          rel="noreferrer"
+          target="_blank"
+        >
           <FaLinkedinIn className="text-3xl text-white  mx-2 transition-all duration-100 ease-linear hover:animate-none  animate-wiggle" />
         </a>
-        <a href="https://www.github.com/FrozenSamurai/">
+        <a
+          href="https://www.github.com/FrozenSamurai/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <FaGithub className="text-3xl text-white  mx-2 transition-all duration-100 ease-linear hover:animate-none  animate-wiggle" />
         </a>
       </div>

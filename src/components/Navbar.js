@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ inView }) => {
+  const navigate = useNavigate();
+
   return (
     <div className=" h-20 flex justify-between items-center w-4/5 bg-inner bg-opacity-80">
-      <a
+      <div
         href="/"
         className="flex flex-row justify-center items-center space-x-3 pl-1"
       >
@@ -11,36 +14,74 @@ const Navbar = () => {
         <h1 className="capitalize font-firaCode font-extrabold text-white">
           Raj Jadhav
         </h1>
-      </a>
+      </div>
       <div className="md:flex flex-row justify-center items-center space-x-10 pr-10 hidden">
-        <a
-          href="google.com"
-          className="lowercase font-firaCode font-extrabold text-gray nav-item"
+        <div
+          onClick={() => {
+            navigate("/", { state: { name: "Home" } });
+            const violation = document.getElementById("Home");
+            window.scrollTo({
+              top: violation.offsetTop,
+              behavior: "smooth",
+            });
+          }}
+          className={`lowercase font-firaCode font-extrabold ${
+            inView === "Home" ? "text-white" : "text-gray"
+          } nav-item`}
         >
           <span className="text-[#C778DD]">#</span>
           Home
-        </a>
-        <a
-          href="google.com"
-          className="lowercase font-firaCode font-extrabold text-gray nav-item"
+        </div>
+        <div
+          onClick={() => {
+            navigate("/", { state: { name: "Projects" } });
+            const violation = document.getElementById("Projects");
+            window.scrollTo({
+              top: violation.offsetTop,
+              behavior: "smooth",
+            });
+          }}
+          className={`lowercase font-firaCode font-extrabold ${
+            inView === "Projects" || inView === "Skills"
+              ? "text-white"
+              : "text-gray"
+          } nav-item`}
         >
           <span className="text-[#C778DD]">#</span>
           Works
-        </a>
-        <a
-          href="google.com"
-          className="lowercase font-firaCode font-extrabold text-gray nav-item"
+        </div>
+        <div
+          onClick={() => {
+            navigate("/", { state: { name: "AboutMe" } });
+            const violation = document.getElementById("AboutMe");
+            window.scrollTo({
+              top: violation.offsetTop,
+              behavior: "smooth",
+            });
+          }}
+          className={`lowercase font-firaCode font-extrabold ${
+            inView === "AboutMe" ? "text-white" : "text-gray"
+          } nav-item`}
         >
           <span className="text-[#C778DD]">#</span>
           About-me
-        </a>
-        <a
-          href="google.com"
-          className="lowercase font-firaCode font-extrabold text-gray nav-item"
+        </div>
+        <div
+          onClick={() => {
+            navigate("/", { state: { name: "Contact" } });
+            const violation = document.getElementById("Contact");
+            window.scrollTo({
+              top: violation.offsetTop,
+              behavior: "smooth",
+            });
+          }}
+          className={`lowercase font-firaCode font-extrabold ${
+            inView === "Contact" ? "text-white" : "text-gray"
+          } nav-item`}
         >
           <span className="text-[#C778DD]">#</span>
           Contacts
-        </a>
+        </div>
       </div>
     </div>
   );

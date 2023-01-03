@@ -1,22 +1,18 @@
 import React from "react";
-import "../cssAssets/Home.css";
 
-const Projecteach = ({ image, stack, name, description, referance, index }) => {
+const SmallPro = ({ stack, name, description, referance, index }) => {
   return (
     <a
       href={referance}
       rel="noreferrer"
       target="_blank"
-      title="Click to View"
+      title="Click to view the repository"
       data-aos="fade-up"
       data-aos-delay={index * 100}
-      className="h-fit md:w-1/3 w-fit md:mx-2.5 mx-3 "
+      className="h-fit md:w-1/3 w-fit md:mx-2.5 mx-3"
     >
-      <div className="flex flex-col w-full h-full border-2 hover:scale-105 transition-transform duration-200 cursor-pointer  border-gray">
-        <div>
-          <img src={image} alt="project overview" />
-        </div>
-        <div className="flex justify-start items-center flex-wrap border-y-2 border-gray">
+      <div className="flex flex-col w-full h-full border-2 hover:scale-105 cursor-pointer  border-gray">
+        <div className="flex justify-start items-center flex-wrap border-b-2 border-gray">
           {stack.split(",").map((item, ind) => (
             <h1
               className="text-gray font-firaCode font-normal text-sm px-2 py-1 "
@@ -43,4 +39,4 @@ const Projecteach = ({ image, stack, name, description, referance, index }) => {
   );
 };
 
-export default Projecteach;
+export default SmallPro;
