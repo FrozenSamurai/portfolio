@@ -4,7 +4,7 @@ import "../cssAssets/Home.css";
 import quotes from "./quotes.json";
 import { useState, useEffect } from "react";
 
-const Home = forwardRef((_,ref) => {
+const Home = forwardRef((_, ref) => {
   const [quote, setQuote] = useState({ auth: "", message: "" });
   useEffect(() => {
     quotesBag();
@@ -28,8 +28,8 @@ const Home = forwardRef((_,ref) => {
 
   return (
     <section id="Home" ref={ref}>
-      <div className="bg-outer h-full w-screen flex  justify-center items-center relative overflow-hidden">
-        <div className="bg-inner h-full w-4/5 flex flex-col justify-center items-center relative md:space-y-5">
+      <div className="bg-outer h-full min-h-screen w-screen flex  justify-center items-center relative overflow-hidden">
+        <div className="bg-inner h-full min-h-screen w-4/5 flex flex-col justify-center items-center relative md:space-y-5">
           <div className="flex md:flex-row md:mt-20 flex-col-reverse justify-center items-center  w-full h-fit">
             <div
               className="md:w-[60%] h-full flex justify-center  items-center md:items-start font-firaCode flex-col space-y-8"
@@ -48,7 +48,7 @@ const Home = forwardRef((_,ref) => {
                 href="https://wa.me/919167126442?text=Hi,%20Raj%20Jadhav.%20Found%20your%20work%20on%20your%20portfolio%20website%20interesting,%20want%20to%20work%20with%20you."
                 rel="noreferrer"
                 target="_blank"
-                className="border-2 md:ml-5 animate-scale w-fit px-3 py-1 border-purple text-white hover:bg-purple"
+                className="border-2 md:ml-5 animate-scale w-fit px-3 py-1  border-purple text-white hover:bg-purple"
               >
                 Contact me!!
               </a>
@@ -58,7 +58,7 @@ const Home = forwardRef((_,ref) => {
               data-aos="fade-left"
               data-aos-delay="500"
             >
-              <div className="z-0 w-1/3 absolute h-2/3 md:top-5 top-0 left-1 animate-pulse">
+              <div className="z-0 w-1/3 absolute h-2/3 md:top-0 top-0 left-5 animate-pulse">
                 <img
                   src="/assets/Logo.svg"
                   alt="logo"
@@ -66,9 +66,9 @@ const Home = forwardRef((_,ref) => {
                 />
               </div>
               <img
-                src="/assets/me.png"
+                src="/assets/newme.png"
                 alt="me"
-                className="w-[95%] h-full z-10 pl-2"
+                className="w-[85%] h-full z-10 pl-2"
               />
               <div
                 className="absolute z-20 bottom-[20%] right-10 animate-bounce hidden lg:block"
@@ -91,7 +91,7 @@ const Home = forwardRef((_,ref) => {
                   <span className="w-5 h-5 bg-purple mr-2"></span>
                   <h1 className="font-firaCode pt-1 xl:text-lg text-md text-gray ">
                     Currently Working on{" "}
-                    <span className="text-white">Portfolio</span>
+                    <span className="text-white">Ujjwal</span>
                     <span className="animate-blink xl:text-xl text-md pb-1">
                       |
                     </span>

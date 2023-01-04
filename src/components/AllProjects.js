@@ -31,8 +31,6 @@ const AllProjects = () => {
       image: "./assets/projects/Helpin'.jpg",
       referance: "https://github.com/FrozenSamurai/Helpin",
     },
-  };
-  const projects2 = {
     project4: {
       name: "Portfolio",
       description: "You are using it Right Now.",
@@ -56,8 +54,6 @@ const AllProjects = () => {
       image: "./assets/projects/whatsapplink.jpg",
       referance: "https://whatsapp-link-generator-eight.vercel.app/",
     },
-  };
-  const projects3 = {
     project7: {
       name: "Nutritionist App",
       description:
@@ -66,15 +62,15 @@ const AllProjects = () => {
       image: "./assets/projects/nutritionist-app.jpg",
       referance: "https://nutrirecall.vercel.app/",
     },
-    project8: {
-      name: "Gits Website",
-      description:
-        "Group Of Information Technology Students committee website.",
-      stack: "React, Tailwind, Three JS",
-      image: "./assets/projects/gits-website.jpg",
-      referance: "https://gits.dmce.ac.in/",
-    },
-    project4: {
+    // project8: {
+    //   name: "Gits Website",
+    //   description:
+    //     "Group Of Information Technology Students committee website.",
+    //   stack: "React, Tailwind, Three JS",
+    //   image: "./assets/projects/gits-website.jpg",
+    //   referance: "https://gits.dmce.ac.in/",
+    // },
+    project9: {
       name: "Billing app",
       description:
         "For fast billing of solo facilities company with exporting as pdf feature.",
@@ -107,7 +103,6 @@ const AllProjects = () => {
       referance: "https://github.com/FrozenSamurai/Flask_auth",
     },
   };
-  const smallproject2 = {};
   return (
     <>
       <div className="fixed w-screen flex justify-center z-50 ">
@@ -121,7 +116,7 @@ const AllProjects = () => {
       >
         <HangingSocials />
       </div>
-      <div className="bg-outer h-full w-screen flex  justify-center items-center relative overflow-hidden">
+      <div className="bg-outer h-full w-screen flex flex-col justify-center items-center relative overflow-hidden">
         <div className="bg-inner h-full w-4/5 flex flex-col justify-center items-center relative md:space-y-5">
           <div className="flex flex-col md:mt-20 justify-center items-center  w-full h-fit">
             <div className="flex flex-col w-full md:mt-0 mt-20 px-5 space-y-2">
@@ -135,7 +130,7 @@ const AllProjects = () => {
                 <span className="text-purple">#</span>complete-apps
               </h1>
             </div>
-            <div className="flex md:flex-row flex-col justify-between items-start md:px-2.5  space-y-5 md:space-y-0">
+            <div className=" grid md:grid-cols-3 grid-cols-1 md:gap-y-5 md:px-2.5  space-y-5 md:space-y-0">
               {Object.keys(projects).map((key, ind) => {
                 return (
                   <Projecteach
@@ -150,42 +145,12 @@ const AllProjects = () => {
                 );
               })}
             </div>
-            <div className="flex md:flex-row flex-col justify-start items-start md:px-2.5 space-y-5 md:space-y-0 mt-5 md:mt-4">
-              {Object.keys(projects2).map((key, ind) => {
-                return (
-                  <Projecteach
-                    name={projects2[key].name}
-                    description={projects2[key].description}
-                    stack={projects2[key].stack}
-                    image={projects2[key].image}
-                    referance={projects2[key].referance}
-                    index={ind}
-                    key={ind}
-                  />
-                );
-              })}
-            </div>
-            <div className="flex md:flex-row flex-col justify-start items-start md:px-2.5 space-y-5 md:space-y-0 mt-5 md:mt-4">
-              {Object.keys(projects3).map((key, ind) => {
-                return (
-                  <Projecteach
-                    name={projects3[key].name}
-                    description={projects3[key].description}
-                    stack={projects3[key].stack}
-                    image={projects3[key].image}
-                    referance={projects3[key].referance}
-                    index={ind}
-                    key={ind}
-                  />
-                );
-              })}
-            </div>
             <div className="flex flex-col w-full px-5 space-y-2 mt-16 mb-6">
               <h1 className="text-white font-firaCode font-bold md:text-xl text-lg ">
                 <span className="text-purple">#</span>small-projects
               </h1>
             </div>
-            <div className="flex md:flex-row flex-col justify-start items-start md:px-2.5 space-y-5 md:space-y-0 md:mt-4">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-y-5 md:px-2.5 mb-10 space-y-5 md:space-y-0">
               {Object.keys(smallProjects).map((key, ind) => {
                 return (
                   <SmallPro
@@ -199,25 +164,11 @@ const AllProjects = () => {
                 );
               })}
             </div>
-            <div className="w-full flex md:flex-row flex-col justify-start items-start md:px-2.5 space-y-5 md:space-y-0 mt-5 md:mt-4 md:mb-16 mb-10">
-              {Object.keys(smallproject2).map((key, ind) => {
-                return (
-                  <SmallPro
-                    name={smallproject2[key].name}
-                    description={smallproject2[key].description}
-                    stack={smallproject2[key].stack}
-                    referance={smallproject2[key].referance}
-                    index={ind}
-                    key={ind}
-                  />
-                );
-              })}
-            </div>
           </div>
         </div>
-      </div>
-      <div className=" mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5  border-gray flex flex-col justify-start items-center">
-        <Footer />
+        <div className=" mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[1000] border-gray flex flex-col justify-start items-center">
+          <Footer />
+        </div>
       </div>
     </>
   );

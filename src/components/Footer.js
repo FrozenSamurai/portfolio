@@ -6,7 +6,7 @@ import { RiCopyleftLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <>
-      <div className="w-3/4 h-3/4 flex flex-row font-firaCode text-gray">
+      <div className="w-3/4 h-3/4 flex flex-row font-firaCode text-gray ">
         <div className="flex flex-row w-full justify-start items-start py-5 ">
           <div className="flex flex-col w-1/2 space-y-3 ">
             <div className="flex md:flex-row flex-col w-full justify-start items-center">

@@ -83,8 +83,11 @@ const AboutMe = forwardRef((_, ref) => {
           </div>
         </div>
         <div className="absolute border-y-[1px] border-r-[1px] md:bottom-[15%] top-[12rem] left-0 border-gray h-32 md:w-16 w-8  "></div>
-        <div className="absolute md:bottom-[20%] md:right-0 right-0  border-gray h-20 w-fit ">
+        <div className="absolute hidden md:block md:bottom-[20%] md:right-0 right-0  border-gray h-20 w-fit ">
           <Matrix vertical={5} horizontal={5} space={4} />
+        </div>
+        <div className="absolute block md:hidden md:bottom-[20%] md:right-0 right-0  border-gray h-20 w-fit ">
+          <Matrix vertical={5} horizontal={3} space={4} />
         </div>
       </div>
     </section>

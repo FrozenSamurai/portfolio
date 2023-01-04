@@ -50,7 +50,7 @@ const Projects = forwardRef((_, ref) => {
                 <span className="border-[1px] md:w-3/6 w-2/3 border-purple md:ml-10 bg-purple ml-3"></span>
               </div>
               <div
-                className="text-transparent w-60 font-bold font-firaCode flex flex-row md:text-lg text-xs cursor-pointer bg-slate-500 hover:text-purple btn-shine animate-ping pr-20"
+                className="text-transparent md:w-60 font-bold font-firaCode flex flex-row md:text-lg text-xs cursor-pointer bg-slate-500 hover:text-purple btn-shine animate-ping md:pr-20"
                 title="More Projects"
                 data-aos="fade-left"
                 data-aos-offset="0"
@@ -59,10 +59,12 @@ const Projects = forwardRef((_, ref) => {
                   window.scrollTo(0, 0);
                 }}
               >
-                View more <span className="">{" ~~>"}</span>
+                <h1 className="flex flex-row w-full">
+                  View more <span className="">{" ~~>"}</span>
+                </h1>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col justify-between items-start  md:px-2.5 space-y-5 md:space-y-0 md:mt-16 mt-10">
+            <div className="md:px-2.5 space-y-5 md:space-y-0 md:mt-16 mt-10 grid md:grid-cols-3 grid-cols-1 md:gap-y-5">
               {Object.keys(projects).map((key, ind) => {
                 return (
                   <Projecteach
@@ -77,6 +79,17 @@ const Projects = forwardRef((_, ref) => {
                 );
               })}
             </div>
+            <button
+              className="border-2 md:hidden mt-5 animate-scale w-fit px-3 py-1  border-purple text-white hover:bg-purple"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              onClick={() => {
+                navigate("/projects");
+                window.scrollTo(0, 0);
+              }}
+            >
+              View More {"~~>"}
+            </button>
           </div>
         </div>
         <div className="absolute md:bottom-[25%] md:right-0 left-3 top-[15rem] border-gray h-20 w-fit ">

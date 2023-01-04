@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import HangingSocials from "./HangingSocials";
 import Matrix from "../elements/Matrix";
+import Footer from "./Footer";
 
 const MoreAboutMe = () => {
   return (
@@ -18,7 +19,7 @@ const MoreAboutMe = () => {
         <HangingSocials />
       </div>
 
-      <div className="bg-outer h-full w-screen flex  justify-center items-center relative overflow-hidden">
+      <div className="bg-outer h-full w-screen flex flex-col justify-center items-center relative overflow-hidden">
         <div className="bg-inner h-full w-4/5 flex flex-col justify-center items-center relative md:space-y-5">
           <div className="flex md:flex-col md:mt-20 flex-col justify-center items-center  w-full h-fit">
             <div className="flex flex-col w-full md:mt-0 mt-20 px-5 space-y-2">
@@ -218,7 +219,7 @@ const MoreAboutMe = () => {
               <span className="text-purple">#</span>volunteering
             </h1>
           </div>
-          <div className="flex relative w-full flex-col h-screen space-y-5 px-20">
+          <div className="flex relative w-full flex-col h-fit space-y-5 px-20">
             <div
               className="w-full h-fit relative flex md:items-start md:justify-start justify-center items-center md:px-5"
               data-aos="fade-right"
@@ -263,6 +264,9 @@ const MoreAboutMe = () => {
           </div>
           <Achievement1 />
         </div>
+        <div className=" mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[1000] border-gray flex flex-col justify-start items-center">
+          <Footer />
+        </div>
       </div>
     </>
   );
@@ -271,8 +275,8 @@ const MoreAboutMe = () => {
 export default MoreAboutMe;
 
 const VolunteeringItem = ({ idx, role, company, date, listItems, imgSrc }) => (
-  <div className="w-[31rem] h-52 flex md:flex-row flex-col space-y-0.5 space-x-0 md:space-x-0.5">
-    <div className="md:w-52 w-full h-full border-[1px] border-gray">
+  <div className="lg:w-[31rem] w-72 lg:h-52 h-fit flex lg:flex-row flex-col space-y-0.5 space-x-0 lg:space-x-0.5 lg:space-y-0">
+    <div className="lg:w-52 w-full max-w-52 h-full border-[1px] border-gray">
       <img
         src={imgSrc}
         alt="img"
@@ -282,14 +286,16 @@ const VolunteeringItem = ({ idx, role, company, date, listItems, imgSrc }) => (
         }}
       />
     </div>
-    <span className="md:h-full w-full h-1 bg-purple md:w-1"></span>
+    <span className="lg:h-full w-full h-1 bg-purple lg:w-1"></span>
     <div className="w-72 h-full flex flex-col items-start border-[1px] border-gray">
-      <h1 className="text-white font-firaCode font-bold text-xl py-1">
+      <h1 className="text-white font-firaCode font-bold text-xl py-1 pl-0.5">
         {role} <br /> <span className="text-gray">{company}</span>
       </h1>
-      <h1 className="text-gray font-firaCode font-normal text-sm">{date}</h1>
+      <h1 className="text-gray font-firaCode font-normal text-sm pl-0.5">
+        {date}
+      </h1>
       <hr className="w-full border-t-gray border-t-[1px]" />
-      <div className="flex flex-col w-full justify-center items-center">
+      <div className="flex flex-col w-full justify-center items-center pl-0.5">
         <h1 className="text-gray font-firaCode font-normal py-2 text-sm">
           {listItems}
         </h1>

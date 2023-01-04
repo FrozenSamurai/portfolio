@@ -89,11 +89,14 @@ const Contact = forwardRef((_, ref) => {
               </div>
             </div>
           </div>
-          <div className="absolute md:top-[25%] md:left-0 left-0  border-gray h-20 w-fit ">
+          <div className="absolute hidden md:block md:top-[25%] md:left-0 left-0  border-gray h-20 w-fit ">
             <Matrix vertical={5} horizontal={3} space={4} />
           </div>
+          <div className="absolute block md:hidden md:top-[25%] md:left-0 left-1  border-gray h-20 w-fit ">
+            <Matrix vertical={5} horizontal={2} space={4} />
+          </div>
         </div>
-        <div className="lg:absolute mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 bottom-0 border-gray flex flex-col justify-start items-center">
+        <div className="lg:absolute md:mt-5 mt-28 lg:mt-0 w-full bg-outer border-t-2 h-1/4 bottom-0 border-gray flex flex-col justify-start items-center">
           <Footer />
         </div>
       </div>

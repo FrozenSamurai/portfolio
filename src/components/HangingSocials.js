@@ -6,7 +6,12 @@ import "../cssAssets/Home.css";
 
 const HangingSocials = () => {
   return (
-    <div className="flex justify-center items-center  space-y-3 flex-col">
+    <div
+      className="flex justify-center items-center  space-y-3 flex-col"
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
       {/* <span className="h-36 border-2 border-gray  bg-gray"></span> */}
       <span className="h-60 border-[1px] border-gray  bg-gray"></span>
       <div className="flex justify-center items-center flex-col space-y-3 ">

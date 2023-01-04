@@ -16,23 +16,45 @@ import { useInView } from "react-intersection-observer";
 import MoreAboutMe from "./components/MoreAboutMe";
 import { Model } from "./components/Model/Model";
 import ThreedSamurai from "./components/Model/ThreedSamurai";
+import SplashScreen from "./components/Splash/SplashScreen";
 
 function App() {
   const options = {
     rootMargin: "-90px 0px 0px 0px",
   };
-
+  const [loaded, setLoaded] = useState(false);
   const HomeScreen = () => {
+    const [ready, setReady] = useState(false);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setReady(true);
+      }, 11000);
+    });
+
+    return <>{ready || loaded ? <MainApp /> : <SplashScreen />}</>;
+  };
+
+  const MainApp = () => {
     const [homeRef, homeInview] = useInView(options);
     const [projectRef, projectInview] = useInView(options);
     const [skillRef, skillInview] = useInView(options);
     const [aboutRef, aboutInview] = useInView(options);
     const [contactRef, contactInview] = useInView(options);
     const [inView, SetInview] = useState("Home");
-
     const location = useLocation();
     const [playing, setPlaying] = useState(false);
-
+    useEffect(() => {
+      setLoaded(true);
+      const violation = document.getElementById(
+        location.state ? location.state.name : "Home"
+      );
+      window.scrollTo({
+        top: violation.offsetTop,
+        behavior: "smooth",
+      });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     useEffect(() => {
       if (homeInview) {
         SetInview("Home");
@@ -46,18 +68,6 @@ function App() {
         SetInview("Contact");
       }
     }, [homeInview, projectInview, skillInview, aboutInview, contactInview]);
-
-    useEffect(() => {
-      const violation = document.getElementById(
-        location.state ? location.state.name : "Home"
-      );
-      window.scrollTo({
-        top: violation.offsetTop,
-        behavior: "smooth",
-      });
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
     return (
       <>
         <div
@@ -87,7 +97,7 @@ function App() {
               playing ? "block" : "hidden"
             }`}
           >
-            I am a Samurai, a symbol of discipline
+            I am a Samurai, a symbol of discipline.
           </h1>
           <div className="w-fit h-fit raise-up">
             <ThreedSamurai playing={playing} setPlaying={setPlaying} />
@@ -96,12 +106,16 @@ function App() {
       </>
     );
   };
+
   return (
-    <div className="w-full h-full relative bg-outer">
+    <div className="w-full h-full min-h-screen min-w-full relative bg-outer">
+      <div className="fixed w-4/5 h-full left-0 right-0   mx-auto bg-inner"></div>
       <Routes>
         <Route index exact path="/" element={<HomeScreen />} />
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/aboutme" element={<MoreAboutMe />} />
+        {/* <Route path="/splash" element={<SplashScreen />} /> */}
+        {/* <Route path="/*" /> */}
       </Routes>
     </div>
   );
