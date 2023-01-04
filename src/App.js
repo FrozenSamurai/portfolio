@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import AllProjects from "./components/AllProjects";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
@@ -114,7 +114,7 @@ function App() {
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/aboutme" element={<MoreAboutMe />} />
         {/* <Route path="/splash" element={<SplashScreen />} /> */}
-        {/* <Route path="/*" /> */}
+        <Route path="*" element={<Navigate to="/" replace />} />{" "}
       </Routes>
     </div>
   );
