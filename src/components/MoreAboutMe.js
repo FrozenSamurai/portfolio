@@ -251,7 +251,17 @@ const MoreAboutMe = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col relative w-full pb-10">
+            <div className="absolute md:block hidden animatey top-5 right-[22%]">
+              <Matrix vertical={5} horizontal={5} space={3} />
+            </div>
+            <div className="absolute md:block hidden bottom-5 right-[10%] animatey5">
+              <img
+                src="/assets/Logo.svg"
+                alt="logo"
+                className="w-28 animate-pulse "
+              />
+            </div>
             <div
               className="flex flex-row justify-start items-center px-5  mt-10 w-full pb-5"
               data-aos="fade-right"
@@ -261,10 +271,10 @@ const MoreAboutMe = () => {
                 <span className="text-purple">#</span>achievements
               </h1>
             </div>
+            <Achievement1 />
           </div>
-          <Achievement1 />
         </div>
-        <div className=" mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[1000] border-gray flex flex-col justify-start items-center">
+        <div className=" mt-10 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[1000] border-gray flex flex-col justify-start items-center">
           <Footer />
         </div>
       </div>
@@ -305,5 +315,19 @@ const VolunteeringItem = ({ idx, role, company, date, listItems, imgSrc }) => (
 );
 
 const Achievement1 = () => {
-  return <></>;
+  return (
+    <>
+      <div className="md:w-2/3 w-full flex flex-wrap gap-3 px-5">
+        <h1 className="px-2 py-1 border-gray border-[2px] text-white font-firaCode ">
+          Smart India Hackathon 2022 Winner
+        </h1>
+        <h1 className="px-2 py-1 border-gray border-[2px] text-white font-firaCode ">
+          Techotsav-22' 1st RunnerUp
+        </h1>
+        <h1 className="px-2 py-1 border-gray border-[2px] text-white font-firaCode ">
+          DeepBlue Season 5 Semi-Finalist
+        </h1>
+      </div>
+    </>
+  );
 };
