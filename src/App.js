@@ -109,7 +109,6 @@ function App() {
 
   return (
     <div className="w-full h-full min-h-screen min-w-full relative bg-outer">
-      <div className="fixed w-4/5 h-full left-0 right-0   mx-auto bg-inner"></div>
       <Routes>
         <Route index exact path="/" element={<HomeScreen />} />
         <Route path="/projects" element={<AllProjects />} />

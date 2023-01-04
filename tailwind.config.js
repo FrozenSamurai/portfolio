@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         inner: "#2c2f36",
-        outer: "#282C33",
+        outer: "#2c2f36",
         purple: "#C778DD",
         gray: "#ABB2BF",
         accent: "#00ffff",
