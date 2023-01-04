@@ -252,10 +252,10 @@ const MoreAboutMe = () => {
             </div>
           </div>
           <div className="flex flex-col relative w-full pb-10">
-            <div className="absolute md:block hidden animatey top-5 right-[22%]">
+            <div className="absolute md:block hidden animatey top-10 right-[22%]">
               <Matrix vertical={5} horizontal={5} space={3} />
             </div>
-            <div className="absolute md:block hidden bottom-5 right-[10%] animatey5">
+            <div className="absolute md:block hidden bottom-10 right-[10%] animatey5">
               <img
                 src="/assets/Logo.svg"
                 alt="logo"
@@ -322,11 +322,19 @@ const Achievement1 = () => {
           Smart India Hackathon 2022 Winner
         </h1>
         <h1 className="px-2 py-1 border-gray border-[2px] text-white font-firaCode ">
-          Techotsav-22' 1st RunnerUp
+          Techotsav '22 1st RunnerUp
         </h1>
         <h1 className="px-2 py-1 border-gray border-[2px] text-white font-firaCode ">
-          DeepBlue Season 5 Semi-Finalist
+          DeepBlue Season 6 Semi-Finalist
         </h1>
+        <a
+          className="px-2 py-1 border-gray border-[2px] text-white font-firaCode hover:bg-slate-900"
+          href="https://www.irjet.net/archives/V8/i10/IRJET-V8I10147.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          A Study of Content Conversation Suggestion in Messaging Applications
+        </a>
       </div>
     </>
   );
