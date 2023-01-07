@@ -29,7 +29,7 @@ const Contact = forwardRef((_, ref) => {
                 data-aos="fade-right"
                 data-aos-delay="100"
               >
-                <p className="text-gray font-firaCode">
+                <p className="text-gray font-firaCode pb-2">
                   I am interested in internship and job opportunities. However,
                   if you have other requests or questions, feel free to contact
                   me.

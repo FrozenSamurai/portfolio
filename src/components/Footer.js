@@ -6,10 +6,10 @@ import { RiCopyleftLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <>
-      <div className="md:w-3/4 w-full px-5 md:px-0 h-3/4 flex flex-row font-firaCode text-gray ">
+      <div className="md:w-3/4 w-full px-5 md:px-0 md:h-3/4 h-44 flex flex-row font-firaCode text-gray ">
         <div className="flex flex-row w-full justify-start items-start py-5 ">
           <div className="flex flex-col w-1/2 space-y-3 ">
-            <div className="flex md:flex-row flex-col w-full justify-start items-center">
+            <div className="flex md:flex-row flex-col w-full justify-start space-y-1 items-center">
               <div className="flex flex-row space-x-3 font-firaCode  text-white font-bold md:text-xl text-sm">
                 <img src="/assets/Union.svg" alt="logo" className="w-6" />
                 <h1 className=" flex flex-row">Raj Jadhav</h1>
@@ -79,9 +79,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h1 className="flex absolute lg:relative bottom-0 flex-row font-firaCode text-xs text-gray space-x-1">
+      <h1 className="flex absolute lg:relative md:bottom-0 bottom-3 flex-row font-firaCode text-xs text-gray space-x-1">
         <RiCopyleftLine />
-        <span>Copyleft 2022. Made by Raj</span>
+        <span>Copyleft 2023. Made by Raj</span>
       </h1>
     </>
   );
