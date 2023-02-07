@@ -6,7 +6,7 @@ const AboutMe = forwardRef((_, ref) => {
   const navigate = useNavigate();
   return (
     <section id="AboutMe" ref={ref}>
-      <div className="bg-outer md:h-screen h-full w-screen flex  justify-center items-center relative overflow-hidden">
+      <div className="bg-outer md:h-full h-full w-screen flex  justify-center items-center relative overflow-hidden">
         <div className="bg-inner h-full w-4/5  ">
           <div className="relative  w-full h-full flex flex-col justify-start  mt-20">
             <div className="flex flex-row justify-between items-center  w-full">

@@ -274,7 +274,7 @@ const MoreAboutMe = () => {
             <Achievement1 />
           </div>
         </div>
-        <div className=" mt-10 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[1000] border-gray flex flex-col justify-start items-center">
+        <div className=" mt-10 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[10] border-gray flex flex-col justify-start items-center">
           <Footer />
         </div>
       </div>

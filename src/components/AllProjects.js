@@ -62,14 +62,14 @@ const AllProjects = () => {
       image: "./assets/projects/nutritionist-app.jpg",
       referance: "https://nutrirecall.vercel.app/",
     },
-    // project8: {
-    //   name: "Gits Website",
-    //   description:
-    //     "Group Of Information Technology Students committee website.",
-    //   stack: "React, Tailwind, Three JS",
-    //   image: "./assets/projects/gits-website.jpg",
-    //   referance: "https://gits.dmce.ac.in/",
-    // },
+    project8: {
+      name: "Gits Website",
+      description:
+        "Group Of Information Technology Students official committee website.",
+      stack: "React, Tailwind, Three JS",
+      image: "./assets/projects/gits-website.jpg",
+      referance: "https://gits.dmce.ac.in/",
+    },
     project9: {
       name: "Billing app",
       description:
@@ -166,7 +166,7 @@ const AllProjects = () => {
             </div>
           </div>
         </div>
-        <div className=" mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[1000] border-gray flex flex-col justify-start items-center">
+        <div className=" mt-5 lg:mt-0 w-full bg-outer border-t-2 h-1/4 pb-5 z-[10] border-gray flex flex-col justify-start items-center">
           <Footer />
         </div>
       </div>

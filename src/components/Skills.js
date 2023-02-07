@@ -1,12 +1,12 @@
 import React, { forwardRef } from "react";
 import Matrix from "../elements/Matrix";
 
-const Skills = forwardRef((_,ref) => {
+const Skills = forwardRef((_, ref) => {
   return (
     <section id="Skills" ref={ref}>
-      <div className="bg-outer md:h-96 h-full w-screen flex  justify-center items-center relative overflow-hidden">
+      <div className="bg-outer md: h-full w-screen flex  justify-center items-center relative overflow-hidden">
         <div className="bg-inner h-full w-4/5  ">
-          <div className="relative  w-full h-full flex flex-col justify-start  ">
+          <div className="relative  w-full  flex flex-col justify-start  ">
             <div className="flex flex-row justify-between items-center  w-full">
               <div
                 className="flex flex-row justify-start items-center md:w-4/5 w-full"
@@ -19,7 +19,7 @@ const Skills = forwardRef((_,ref) => {
                 <span className="border-[1px] md:w-1/4 w-3/5 border-purple md:ml-10 bg-purple ml-3"></span>
               </div>
             </div>
-            <div className="w-full h-full justify-center md:flex flex-row hidden">
+            <div className="w-full  h-96 justify-center md:flex flex-row hidden">
               <div
                 className="w-2/5   h-full relative hidden xl:flex"
                 data-aos="fade-up"
@@ -170,7 +170,7 @@ const Skills = forwardRef((_,ref) => {
               </div>
             </div>
           </div>
-          <div className="w-full gap-4 mt-3 px-3 flex flex-col justify-center items-center">
+          <div className="w-full gap-4 mt-3 px-3 flex flex-col justify-center items-center md:hidden">
             <div
               className="w-full border-2 border-gray h-fit"
               data-aos="fade-up"

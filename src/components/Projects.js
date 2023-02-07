@@ -35,8 +35,8 @@ const Projects = forwardRef((_, ref) => {
   };
   return (
     <section id="Projects" ref={ref}>
-      <div className="bg-outer md:h-screen h-full w-screen flex pb-16 md:pb-0 justify-center items-center relative overflow-hidden">
-        <div className="bg-inner h-full w-4/5  ">
+      <div className="bg-outer md:h-full h-full  w-screen flex pb-16 md:pb-0 justify-center items-center relative overflow-hidden">
+        <div className="bg-inner h-full w-4/5  pb-3">
           <div className="relative  w-full flex flex-col justify-center items-center  mt-20">
             <div className="flex flex-row justify-between items-center  w-full">
               <div
@@ -64,7 +64,7 @@ const Projects = forwardRef((_, ref) => {
                 </h1>
               </div>
             </div>
-            <div className="md:px-2.5 space-y-5 md:space-y-0 md:mt-16 mt-10 grid md:grid-cols-3 grid-cols-1 md:gap-y-5">
+            <div className="md:px-2.5 space-y-5 md:space-y-0 md:mt-10 mt-10 grid md:grid-cols-3 grid-cols-1 md:gap-y-5 md:mb-3">
               {Object.keys(projects).map((key, ind) => {
                 return (
                   <Projecteach

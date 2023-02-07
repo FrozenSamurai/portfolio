@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const Contact = forwardRef((_, ref) => {
   return (
     <section id="Contact" ref={ref}>
-      <div className="bg-outer md:h-screen h-full w-screen flex flex-col  justify-center items-center relative overflow-hidden">
+      <div className="bg-outer md:h-fit pb-3 h-full w-screen flex flex-col  justify-center items-center relative overflow-hidden">
         <div className="bg-inner h-full w-4/5  ">
           <div className="relative  w-full h-full flex flex-col justify-start  mt-20">
             <div className="flex flex-row justify-between items-center  w-full">
@@ -23,7 +23,7 @@ const Contact = forwardRef((_, ref) => {
                 <span className="border-[1px] md:w-1/6 w-1/5 border-purple md:ml-10 bg-purple ml-3"></span>
               </div>
             </div>
-            <div className="flex lg:flex-row flex-col  justify-between items-center mt-10">
+            <div className="flex lg:flex-row flex-col  justify-between lg:items-start items-center mt-10">
               <div
                 className="flex md:w-1/2 w-full justify-start h-full"
                 data-aos="fade-right"
@@ -96,9 +96,9 @@ const Contact = forwardRef((_, ref) => {
             <Matrix vertical={5} horizontal={2} space={4} />
           </div>
         </div>
-        <div className="lg:absolute md:mt-5 mt-28 lg:mt-0 w-full bg-outer border-t-2 h-1/4 bottom-0 border-gray flex flex-col justify-start items-center">
-          <Footer />
-        </div>
+      </div>
+      <div className="lg: md:mt-5 mt-28 lg:mt-0 w-full bg-outer border-t-2 h-[170px] bottom-0 border-gray flex flex-col justify-start items-center">
+        <Footer />
       </div>
     </section>
   );
