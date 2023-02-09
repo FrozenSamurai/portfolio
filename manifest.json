@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Raj Portfolio",
+  "name": "Raj Jadhav Portfolio Website",
   "icons": [
     {
       "src": "favicon.svg",
@@ -9,12 +9,12 @@
     },
     {
       "src": "favicon.svg",
-      "type": "image/png",
+      "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
       "src": "favicon.svg",
-      "type": "image/png",
+      "type": "image/x-icon",
       "sizes": "512x512"
     }
   ],
