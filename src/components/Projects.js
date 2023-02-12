@@ -12,7 +12,7 @@ const Projects = forwardRef((_, ref) => {
       name: "Ujjwal",
       description:
         "Automated streetlight fault detection system that provides service engineer the reqired information to resolve the fault.",
-      stack: "React,Flask,React Native,Firebase,IoT(Arduino)",
+      stack: "React,Flask,React-Native,Firebase,IoT(Arduino)",
       image: "./assets/projects/ujjwal.jpg",
       referance: "https://ujjwal.vercel.app",
     },
@@ -20,7 +20,7 @@ const Projects = forwardRef((_, ref) => {
       name: "Geofencing",
       description:
         "An IoT based project that allows hospital admins to track patient's real-time location inside a facility and notified when the patient breaches the facility.",
-      stack: "React,Flask,React Native,Firebase,IoT(NodeMCU)",
+      stack: "React,Flask,React-Native,Firebase,IoT(NodeMCU)",
       image: "./assets/projects/geofencing.jpg",
       referance: "https://github.com/FrozenSamurai/GeoFencing.git",
     },

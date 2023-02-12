@@ -11,7 +11,7 @@ const AllProjects = () => {
       name: "Ujjwal",
       description:
         "Automated streetlight fault detection system that provides service engineer the reqired information to resolve the fault.",
-      stack: "React,Flask,React Native,Firebase,IoT(Arduino)",
+      stack: "React,Flask,React-Native,Firebase,IoT(Arduino)",
       image: "./assets/projects/ujjwal.jpg",
       referance: "https://ujjwal.vercel.app",
     },
@@ -19,7 +19,7 @@ const AllProjects = () => {
       name: "Geofencing using IoT",
       description:
         "An IoT based project that allows hospital admins to track patient's real-time location inside a facility and notified when the patient breaches the facility.",
-      stack: "React,Flask,React Native,Firebase,IoT(NodeMCU)",
+      stack: "React,Flask,React-Native,Firebase,IoT(NodeMCU)",
       image: "./assets/projects/geofencing.jpg",
       referance: "https://github.com/FrozenSamurai/GeoFencing.git",
     },
@@ -34,7 +34,7 @@ const AllProjects = () => {
     project4: {
       name: "Portfolio",
       description: "You are using it Right Now.",
-      stack: "React, Tailwind, JS, Three JS",
+      stack: "React, Tailwind, JS, Three.js",
       image: "./assets/projects/portfolio.jpg",
       referance: "https://github.com/FrozenSamurai/Portfolio",
     },
@@ -42,7 +42,7 @@ const AllProjects = () => {
       name: "Solo Facilities",
       description:
         "Website to interact with clients and make them understand the business services better.",
-      stack: "React, Tailwind, JS, Three JS",
+      stack: "React, Tailwind, JS, Three.js",
       image: "./assets/projects/solo.jpg",
       referance: "https://solofacilities.com",
     },
@@ -66,7 +66,7 @@ const AllProjects = () => {
       name: "Gits Website",
       description:
         "Group Of Information Technology Students official committee website.",
-      stack: "React, Tailwind, Three JS",
+      stack: "React, Tailwind, Three.js",
       image: "./assets/projects/gits-website.jpg",
       referance: "https://gits.dmce.ac.in/",
     },
@@ -98,7 +98,7 @@ const AllProjects = () => {
     project3: {
       name: "Game Arcade",
       description:
-        "90s Games like traditional Snake game, Tetris, TicTacToe, Pussle, Sprite, Brick Breaker using Java.",
+        "90s Games like traditional Snake game, Tetris, TicTacToe, Puzzle, Sprite, Brick Breaker using Java.",
       stack: "Java, SQL, Swing, AWT",
       referance: "https://github.com/FrozenSamurai/Flask_auth",
     },

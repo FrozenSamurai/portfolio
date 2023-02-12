@@ -14,7 +14,6 @@ import { useLocation } from "react-router-dom";
 
 import { useInView } from "react-intersection-observer";
 import MoreAboutMe from "./components/MoreAboutMe";
-import { Model } from "./components/Model/Model";
 import ThreedSamurai from "./components/Model/ThreedSamurai";
 import SplashScreen from "./components/Splash/SplashScreen";
 
@@ -34,6 +33,16 @@ function App() {
 
     return <>{ready || loaded ? <MainApp /> : <SplashScreen />}</>;
   };
+
+  useEffect(() => {
+    let docTitle = "Raj Jadhav";
+    window.addEventListener("blur", () => {
+      document.title = "Come Back ;(";
+    });
+    window.addEventListener("focus", () => {
+      document.title = docTitle;
+    });
+  });
 
   const MainApp = () => {
     const [homeRef, homeInview] = useInView(options);

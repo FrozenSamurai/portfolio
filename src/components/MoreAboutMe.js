@@ -118,7 +118,7 @@ const MoreAboutMe = () => {
                   Frameworks
                 </h1>
                 <div className="flex flex-wrap w-full">
-                  {["React", "React Native", "Flask", "Express.js"].map(
+                  {["React", "React-Native", "Flask", "Express.js"].map(
                     (item, ind) => (
                       <h1
                         className="text-gray font-firaCode font-normal px-2 py-1 "
