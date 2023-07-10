@@ -16,8 +16,8 @@ const Footer = () => {
               </div>
               <a
                 href="mailto:rajjdhv2001@gmail.com"
-                target="_blank"
-                rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 className="text-gray font-firaCode text-sm ml-5"
               >
                 rajjdhv2001@gmail.com
