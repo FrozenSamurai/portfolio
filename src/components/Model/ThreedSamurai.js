@@ -1,6 +1,6 @@
-import React, { Suspense, useRef, useState } from "react";
+import React, { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Plane, Stage } from "@react-three/drei";
+import { OrbitControls, Stage } from "@react-three/drei";
 import { Model } from "./Model";
 const ThreedSamurai = ({ playing, setPlaying }) => {
   const ref = useRef();
