@@ -43,4 +43,4 @@ export function Model({ props, playing, setPlaying }) {
   );
 }
 
-useGLTF.preload("/sdsds.gltf");
+useGLTF.preload("/SAMURAI.gltf");
